@@ -40,8 +40,8 @@ myApp.config(function($stateProvider) {
     };
 
     var homeState = {
-        name: 'Home',
-        url: '/home',
+        name: 'CTSHome',
+        url: '/ctshome',
         template: '<h3>This is where the CTS home page lives!</h3>'
     };
 

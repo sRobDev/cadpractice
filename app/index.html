@@ -1,34 +1,86 @@
 <!DOCTYPE html>
-<head>
+<head xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <!--<link rel="stylesheet" href="app.css">-->
-    <link rel="stylesheet" href="styles/main.scss">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
 </head>
-<body ng-app="cadprac">
-    <a ui-sref="Spots" ui-sref-active="active">Spots</a>
-    <a ui-sref="Orders" ui-sref-active="active">Orders</a>
-    <a ui-sref="Destinations" ui-sref-active="active">Destinations</a>
-    <a ui-sref="Settings" ui-sref-active="active">Settings</a>
-    <ui-view></ui-view>
+<body ng-app="cadprac" class="page">
 
+    <div class="page-header">
+        <div class="header-element">
+            <img src="resources/CTS.jpg" alt="Comcast Technology Solutions" style="width:150px;height:100px">
+        </div>
+    </div>
 
+    <div class="page-content">
+        <div class="page-sidebar">
+            <div class="sidebar-element">
+                <a ui-sref="Spots" class="sidebar-link">Spots</a>
+            </div>
+            <div class="sidebar-element">
+                <a ui-sref="Orders" class="sidebar-link">Orders</a>
+            </div>
+            <div class="sidebar-element">
+                <a ui-sref="Destinations" class="sidebar-link">Destinations</a>
+            </div>
+            <div class="sidebar-element">
+                <a ui-sref="Settings" class="sidebar-link">Settings</a>
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="content-titlebar">
+                <span>TitleBar Placeholder</span>
+            </div>
+            <div class="content-items">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p><p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p><p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p><p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+                <ui-view></ui-view>
+            </div>
+        </div>
 
+    </div>
 
+    <div class="page-footer">
+        <div class="footer-element">
+            <a ui-sref="Support" class="footer-link">Support</a>
+        </div>
+        <div class="footer-element">
+            <a ui-sref="Admin" class="footer-link">Admin</a>
+        </div>
+        <div class="footer-element">
+            <a ui-sref="CTSHome" class="footer-link">CTS Home</a>
+        </div>
+        <div class="footer-element">
+            <span id="span-copyright">&copy; 2017 CTS</span>
+        </div>
+        <div class="footer-element">
+            <div class="footer-logo">
+                <img src="resources/CTS.jpg" alt="Comcast Technology Solutions" style="width:150px;height:100px">
+            </div>
+        </div>
+    </div>
 
-
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-  <script src="app.js"></script>
 </body>
 </html>
