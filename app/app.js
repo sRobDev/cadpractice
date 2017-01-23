@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 var myApp = angular.module('cadprac', ['ui.router', 'ui.grid']);
 myApp.config(function($stateProvider) {
+
     var spotState = {
         name: 'Spots',
         url: '/spots',
