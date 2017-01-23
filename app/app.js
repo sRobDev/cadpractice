@@ -22,7 +22,7 @@ myApp.config(function($stateProvider) {
     var destinationState = {
         name: 'Destinations',
         url: '/destinations',
-        templateUrl: 'views/destinationsview/destionations-template.html',
+        templateUrl: 'views/destinationsview/destinations-template.html',
         data: {pageTitle: 'Destinations'}
     };
 
