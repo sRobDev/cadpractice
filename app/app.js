@@ -3,51 +3,54 @@
 // Declare app level module which depends on views, and components
 var myApp = angular.module('cadprac', ['ui.router']);
 myApp.config(function($stateProvider) {
+    var spotState = {
+        name: 'Spots',
+        url: '/spots',
+        template: '<h3>This is where the spots live!</h3>'
+    };
 
-    var states = [
-        {
-            name: 'Spots',
-            url: '/spots',
-            templateUrl: 'views/spotsview/spots-template.html'
-        },
-        {
-            name: 'Orders',
-            url: '/orders',
-            templateUrl: '/views/ordersview/orders-template.html'
-        },
+    var orderState = {
+        name: 'Orders',
+        url: '/orders',
+        template: '<h3>This is where the orders live!</h3>'
+    };
 
-        {
-            name: 'Destinations',
-            url: '/destinations',
-            templateUrl: '/views/destinationsview/destinations-template.html'
-        },
+    var destinationState = {
+        name: 'Destinations',
+        url: '/destinations',
+        template: '<h3>This is where the destinations live!</h3>'
+    };
 
-        {
-            name: 'Settings',
-            url: '/settings',
-            templateUrl: '/views/settingsview/settings-template.html'
-        },
+    var settingsState = {
+        name: 'Settings',
+        url: '/settings',
+        template: '<h3>This is where the settings live!</h3>'
+    };
 
-        {
-            name: 'Support',
-            url: '/support',
-            templateUrl: '/views/supportview/support-template.html'
-        },
+    var supportState = {
+        name: 'Support',
+        url: '/support',
+        template: '<h3>This is where the support lives!</h3>'
+    };
 
-        {
-            name: 'Admin',
-            url: '/admin',
-            templateUrl: '/views/adminview/admin-template.html'
-        },
+    var adminState = {
+        name: 'Admin',
+        url: '/admin',
+        template: '<h3>This is where the admin panel lives!</h3>'
+    };
 
-        {
-            name: 'CTSHome',
-            url: '/ctshome',
-            templateUrl: '/views/homeview/home-template.html'
-        }
-    ]
+    var homeState = {
+        name: 'CTSHome',
+        url: '/ctshome',
+        template: '<h3>This is where the CTS home page lives!</h3>'
+    };
 
-    states.forEach(function(state) {
-        $stateProvider.state(state);
-    });
+    $stateProvider.state(spotState);
+    $stateProvider.state(orderState);
+    $stateProvider.state(destinationState);
+    $stateProvider.state(settingsState);
+    $stateProvider.state(supportState);
+    $stateProvider.state(adminState);
+    $stateProvider.state(homeState);
+
 });
