@@ -18,6 +18,7 @@ p {
 .page {
   display: flex;
   flex-flow: column wrap;
+  overflow-y: auto;
 }
 
 .page-header {
@@ -39,6 +40,7 @@ p {
 .content-area {
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
 }
 
 .content-titlebar {
@@ -125,5 +127,9 @@ p {
   text-decoration: underline;
 }
 
+.gridStyle {
+  width: auto;
+  height: 200px;
+}
 
 
